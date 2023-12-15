@@ -506,7 +506,6 @@ class Controller extends ChangeNotifier {
     } else if (type == "from itempage") {
       res = await SqlConn.readData(
           "Flt_Update_Cart $cartid,'$dateTime','$customId',0,'$os','${map["code"]}',$qty,${map["Srate"]},${map["ProdId"]},'${map["Unit"]}','${map["Pkg"]}',$status");
-
       getItemList(context, category_id);
     }
 

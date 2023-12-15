@@ -27,7 +27,6 @@ class JeminiBorma {
 
   Future _createDB(Database db, int version) async {
     ///////////////barcode store table ////////////////
-
     await db.execute('''
           CREATE TABLE companyRegistrationTable (
             id INTEGER PRIMARY KEY AUTOINCREMENT,

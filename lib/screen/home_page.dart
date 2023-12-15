@@ -308,45 +308,7 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                   ),
-                  // Container(
-                  //   margin: EdgeInsets.only(left: 8),
-                  //   width: size.width * 0.87,
-                  //   height: size.height * 0.06,
-                  //   child: InputDecorator(
-                  //     decoration: const InputDecoration(
-                  //         border: OutlineInputBorder(
-                  //             borderRadius:
-                  //                 BorderRadius.all(Radius.circular(10))),
-                  //         contentPadding: EdgeInsets.only(left: 10)),
-                  //     child: IgnorePointer(
-                  //       ignoring: value.isfreez ? true : false,
-                  //       child: DropdownButtonHideUnderline(
-                  //         child: DropdownButton<String>(
-                  //           iconSize: 30.0,
-                  //           isExpanded: true,
-                  //           value: selected,
-                  //           hint: Text(
-                  //             value.selected == null
-                  //                 ? "Select Customer"
-                  //                 : value.selected.toString(),
-                  //             style: TextStyle(color: Colors.black),
-                  //           ),
-                  //           items: value.customerList
-                  //               .map((Map<String, dynamic> value) {
-                  //             return DropdownMenuItem<String>(
-                  //               value: value["Acc_Id"],
-                  //               child: Text(value["Acc_Name"]),
-                  //             );
-                  //           }).toList(),
-                  //           onChanged: (item) {
-                  //             Provider.of<Controller>(context, listen: false)
-                  //                 .setDropdowndata(item.toString(), context);
-                  //           },
-                  //         ),
-                  //       ),
-                  //     ),
-                  //   ),
-                  // ),
+                 
                   Expanded(
                     child: IconButton(
                         color: const Color.fromARGB(255, 12, 67, 161),
@@ -359,7 +321,8 @@ class _HomePageState extends State<HomePage> {
                         icon: Icon(
                           Icons.refresh,
                           size: 29,
-                        )),
+                        )
+                        ),
                   )
                 ],
               ),

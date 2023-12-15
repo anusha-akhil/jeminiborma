@@ -14,8 +14,6 @@ class RegistrationData {
     cid = json['cid'];
     type = json['type'];
     apptype = json['apptype'];
-
-
     fp = json['fp'];
     os = json['os'];
     if (json['c_d'] != null) {
@@ -24,6 +22,7 @@ class RegistrationData {
         c_d!.add(new CD.fromJson(v));
       });
     }
+
     msg = json['msg'];
     sof = json['sof'];
   }
@@ -33,8 +32,6 @@ class RegistrationData {
     data['cid'] = cid;
     data['type'] = type;
     data['apptype'] = apptype;
-
-
     data['fp'] = fp;
     data['os'] = os;
     if (c_d != null) {
